@@ -10,7 +10,7 @@ import os
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "d4f1a7f8a327443fb488a8ae2ca47eaf"
+newsapi = "api-key"
 
 def speak(text):
     engine.say(text)
@@ -34,7 +34,7 @@ def speak_new(text):
 
 def aiProcess(command):
     client = OpenAI(
-    api_key="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"
+    api_key="open-ai-api-key"
     )
 
     completion = client.chat.completions.create(
